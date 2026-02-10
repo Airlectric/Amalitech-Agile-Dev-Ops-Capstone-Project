@@ -22,14 +22,14 @@
 | Product Backlog | ✅ | `Sprint 0 - Planning/02-product-backlog.md` |
 | Definition of Done | ✅ | `Sprint 0 - Planning/03-definition-of-done.md` |
 | Sprint 1 Plan | ✅ | `Sprint 0 - Planning/04-sprint-1-plan.md` |
-| Sprint 0 Summary | ✅ | `Sprint 0 - Planning/05-sprint-0-summary.md` |
-| Sprint 2 Plan | ✅ | `Sprint 0 - Planning/06-sprint-2-plan.md` |
+| Sprint 2 Plan | ✅ | `Sprint 0 - Planning/05-sprint-2-plan.md` |
+| Sprint 0 Summary | ✅ | `Sprint 0 - Planning/06-sprint-0-summary.md` |
 | Sprint 1 Test Report | ✅ | `Sprint 0 - Planning/07-test-execution-report.md` |
-| Sprint 2 Test Report | ✅ | `Sprint 0 - Planning/08-sprint-2-test-report.md` |
-| Final Project Report | ✅ | `Sprint 0 - Planning/09-final-project-report.md` |
-| Sprint 1 Review | ✅ | `Sprint 0 - Planning/10-sprint-1-review.md` |
-| Sprint 1 Retrospective | ✅ | `Sprint 0 - Planning/11-sprint-1-retrospective.md` |
-| Sprint 2 Review | ✅ | `Sprint 0 - Planning/12-sprint-2-review.md` |
+| Sprint 1 Review | ✅ | `Sprint 0 - Planning/08-sprint-1-review.md` |
+| Sprint 1 Retrospective | ✅ | `Sprint 0 - Planning/09-sprint-1-retrospective.md` |
+| Sprint 2 Test Report | ✅ | `Sprint 0 - Planning/10-sprint-2-test-report.md` |
+| Sprint 2 Review | ✅ | `Sprint 0 - Planning/11-sprint-2-review.md` |
+| Final Project Report | ✅ | `Sprint 0 - Planning/12-final-project-report.md` |
 | Final Retrospective | ✅ | `Sprint 0 - Planning/13-final-retrospective.md` |
 | CI/CD Evidence | ✅ | `Sprint 0 - Planning/14-cicd-evidence.md` |
 | Testing Evidence | ✅ | `Sprint 0 - Planning/15-testing-evidence.md` |
@@ -97,14 +97,14 @@ spendwise/
 │   ├── 02-product-backlog.md
 │   ├── 03-definition-of-done.md
 │   ├── 04-sprint-1-plan.md
-│   ├── 05-sprint-0-summary.md
-│   ├── 06-sprint-2-plan.md
+│   ├── 05-sprint-2-plan.md
+│   ├── 06-sprint-0-summary.md
 │   ├── 07-test-execution-report.md
-│   ├── 08-sprint-2-test-report.md
-│   ├── 09-final-project-report.md
-│   ├── 10-sprint-1-review.md
-│   ├── 11-sprint-1-retrospective.md
-│   ├── 12-sprint-2-review.md
+│   ├── 08-sprint-1-review.md
+│   ├── 09-sprint-1-retrospective.md
+│   ├── 10-sprint-2-test-report.md
+│   ├── 11-sprint-2-review.md
+│   ├── 12-final-project-report.md
 │   ├── 13-final-retrospective.md
 │   ├── 14-cicd-evidence.md
 │   └── 15-testing-evidence.md
