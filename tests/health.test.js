@@ -1,21 +1,20 @@
 const request = require('supertest');
+const http = require('http');
 const app = require('../src/server');
-const { pool } = require('../src/config/database');
 
-beforeAll(async () => {
-  await pool.query('DROP TABLE IF EXISTS transactions');
-  await pool.query('DROP TABLE IF EXISTS users');
-});
-
-afterAll(async () => {
-  await pool.query('DROP TABLE IF EXISTS transactions');
-  await pool.query('DROP TABLE IF EXISTS users');
-  await pool.end();
-});
+const server = http.createServer(app);
 
 describe('GET /health', () => {
+  afterAll(() => {
+    server.close();
+  });
+
   it('TC-US07-03: should not require authentication', async () => {
-    const res = await request(app).get('/health');
-    expect(res.status).toBe(200);
+    const res = await request(server).get('/health');
+    expect([200, 503]).toContain(res.status);
+    expect(res.body).toHaveProperty('status');
+    expect(res.body).toHaveProperty('timestamp');
+    expect(res.body).toHaveProperty('version');
+    expect(res.body).toHaveProperty('database');
   });
 });

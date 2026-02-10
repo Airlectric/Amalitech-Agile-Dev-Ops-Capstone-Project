@@ -80,7 +80,7 @@ const getTransactionSummary = async (userId, dateRange = {}) => {
   const result = await query(sql, params);
   const { total_income, total_expenses } = result.rows[0];
   
-  const byCategorySql = `
+  let byCategorySql = `
     SELECT
       category,
       type,
