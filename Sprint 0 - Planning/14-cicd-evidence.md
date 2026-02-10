@@ -1,5 +1,19 @@
 # CI/CD Pipeline Evidence
 
+## Screenshot Evidence
+
+| Screenshot # | Image | Description |
+|--------------|-------|-------------|
+| 04 | `setup_test_images/sprint_1_tests/04-npm-test-running.png` | Sprint 1 tests running |
+| 05 | `setup_test_images/sprint_1_tests/05-test-results-27-passed.png` | 27 tests passed |
+| 06 | `setup_test_images/sprint_1_tests/06-eslint-results.png` | ESLint validation |
+| 07 | `setup_test_images/sprint_1_tests/07-docker-containers.png` | Docker containers running |
+| 08 | `setup_test_images/sprint_2_tests/08-sprint2-tests-running.png` | Sprint 2 tests running |
+| 09 | `setup_test_images/sprint_2_tests/09-test-results-45-passed.png` | 45 tests passed |
+| 10 | `setup_test_images/sprint_2_tests/10-coverage-report-90percent.png` | Coverage report 90% |
+
+---
+
 ## GitHub Actions Workflow
 
 The CI/CD pipeline is configured in `.github/workflows/ci.yml` and runs on every push and pull request.

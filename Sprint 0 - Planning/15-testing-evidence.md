@@ -1,5 +1,37 @@
 # Testing Evidence
 
+## Screenshot Evidence
+
+| Screenshot # | Image | Description |
+|--------------|-------|-------------|
+| 01 | `setup_test_images/setup/01-postgres-docker-setup.png` | PostgreSQL running in Docker |
+| 02 | `setup_test_images/setup/02-app-logs-docker.png` | Application logs in Docker |
+| 03 | `setup_test_images/setup/03-database-schema.png` | Database schema verification |
+| 04 | `setup_test_images/sprint_1_tests/04-npm-test-running.png` | Sprint 1 tests running |
+| 05 | `setup_test_images/sprint_1_tests/05-test-results-27-passed.png` | 27 tests passed |
+| 06 | `setup_test_images/sprint_1_tests/06-eslint-results.png` | ESLint validation |
+| 07 | `setup_test_images/sprint_1_tests/07-docker-containers.png` | Docker containers running |
+| 08 | `setup_test_images/sprint_2_tests/08-sprint2-tests-running.png` | Sprint 2 tests running |
+| 09 | `setup_test_images/sprint_2_tests/09-test-results-45-passed.png` | 45 tests passed |
+| 10 | `setup_test_images/sprint_2_tests/10-coverage-report-90percent.png` | Coverage report 90% |
+| 11 | `setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png` | Registration success |
+| 12 | `setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png` | Missing email validation |
+| 13 | `setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png` | Invalid email - 401 |
+| 14 | `setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png` | Login success |
+| 15 | `setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png` | Transaction creation |
+| 16 | `setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png` | No token - 401 |
+| 17 | `setup_test_images/api_testing_sprint_1/17-US03-03-invalid-token-401.png` | Invalid token - 401 |
+| 18 | `setup_test_images/api_testing_sprint_1/18-US03-05-negative-amount-validation.png` | Negative amount validation |
+| 19 | `setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png` | List transactions |
+| 20 | `setup_test_images/api_testing_sprint_2/20-US05-01-filter-by-type.png` | Filter by type |
+| 21 | `setup_test_images/api_testing_sprint_2/21-US05-02-filter-by-category.png` | Filter by category |
+| 22 | `setup_test_images/api_testing_sprint_2/22-US05-03-filter-by-date-range.png` | Filter by date range |
+| 23 | `setup_test_images/api_testing_sprint_2/23-US05-04-combined-filters.png` | Combined filters |
+| 24 | `setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png` | Summary endpoint |
+| 25 | `setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png` | Health endpoint |
+
+---
+
 ## Test Suite Overview
 
 | Sprint | Test Suites | Tests | Passing | Failing | Coverage |

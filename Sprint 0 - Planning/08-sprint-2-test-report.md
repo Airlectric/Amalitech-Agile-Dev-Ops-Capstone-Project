@@ -26,16 +26,33 @@ This document provides comprehensive evidence of test execution for all acceptan
 
 ---
 
+## Screenshot Evidence
+
+| Screenshot # | Image | Description |
+|--------------|-------|-------------|
+| 08 | `setup_test_images/sprint_2_tests/08-sprint2-tests-running.png` | Sprint 2 tests running |
+| 09 | `setup_test_images/sprint_2_tests/09-test-results-45-passed.png` | 45 tests passed |
+| 10 | `setup_test_images/sprint_2_tests/10-coverage-report-90percent.png` | Coverage report 90% |
+| 19 | `setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png` | List transactions endpoint |
+| 20 | `setup_test_images/api_testing_sprint_2/20-US05-01-filter-by-type.png` | Filter by type |
+| 21 | `setup_test_images/api_testing_sprint_2/21-US05-02-filter-by-category.png` | Filter by category |
+| 22 | `setup_test_images/api_testing_sprint_2/22-US05-03-filter-by-date-range.png` | Filter by date range |
+| 23 | `setup_test_images/api_testing_sprint_2/23-US05-04-combined-filters.png` | Combined filters |
+| 24 | `setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png` | Summary endpoint |
+| 25 | `setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png` | Health endpoint |
+
+---
+
 ## US-04: List My Transactions - Test Results
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status |
-|--------|---------------------|-----------|--------|
-| AC-01 | GET `/api/transactions` returns only authenticated user's transactions | TC-US04-01 | ✅ PASS |
-| AC-02 | Sorted by date descending | TC-US04-02 | ✅ PASS |
-| AC-03 | Returns 200 with empty array if no transactions | TC-US04-03 | ✅ PASS |
-| AC-04 | Returns 401 if not authenticated | TC-US04-04 | ✅ PASS |
+| AC Ref | Acceptance Criterion | Test Case | Status | Screenshot |
+|--------|---------------------|-----------|--------|-----------|
+| AC-01 | GET `/api/transactions` returns only authenticated user's transactions | TC-US04-01 | ✅ PASS | [19-US04-01](setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png) |
+| AC-02 | Sorted by date descending | TC-US04-02 | ✅ PASS | [19-US04-01](setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png) |
+| AC-03 | Returns 200 with empty array if no transactions | TC-US04-03 | ✅ PASS | [19-US04-01](setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png) |
+| AC-04 | Returns 401 if not authenticated | TC-US04-04 | ✅ PASS | - |
 
 ### Detailed Test Results
 
@@ -54,13 +71,13 @@ PASS tests/transactions-list.test.js
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status |
-|--------|---------------------|-----------|--------|
-| AC-01 | Filter by type (income/expense) | TC-US05-01 | ✅ PASS |
-| AC-02 | Filter by category (case-insensitive) | TC-US05-02 | ✅ PASS |
-| AC-03 | Filter by date range | TC-US05-03 | ✅ PASS |
-| AC-04 | Filters can be combined | TC-US05-04 | ✅ PASS |
-| AC-05 | Returns empty array if no matches | TC-US05-05 | ✅ PASS |
+| AC Ref | Acceptance Criterion | Test Case | Status | Screenshot |
+|--------|---------------------|-----------|--------|-----------|
+| AC-01 | Filter by type (income/expense) | TC-US05-01 | ✅ PASS | [20-US05-01](setup_test_images/api_testing_sprint_2/20-US05-01-filter-by-type.png) |
+| AC-02 | Filter by category (case-insensitive) | TC-US05-02 | ✅ PASS | [21-US05-02](setup_test_images/api_testing_sprint_2/21-US05-02-filter-by-category.png) |
+| AC-03 | Filter by date range | TC-US05-03 | ✅ PASS | [22-US05-03](setup_test_images/api_testing_sprint_2/22-US05-03-filter-by-date-range.png) |
+| AC-04 | Filters can be combined | TC-US05-04 | ✅ PASS | [23-US05-04](setup_test_images/api_testing_sprint_2/23-US05-04-combined-filters.png) |
+| AC-05 | Returns empty array if no matches | TC-US05-05 | ✅ PASS | - |
 
 ### Detailed Test Results
 
@@ -80,13 +97,13 @@ PASS tests/transactions-list.test.js
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status |
-|--------|---------------------|-----------|--------|
-| AC-01 | Returns total_income, total_expenses, balance, by_category | TC-US06-01 | ✅ PASS |
-| AC-02 | Only computes for authenticated user | TC-US06-02 | ✅ PASS |
-| AC-03 | Accepts optional date range | TC-US06-03 | ✅ PASS |
-| AC-04 | Returns zeroed values for new user | TC-US06-04 | ✅ PASS |
-| AC-05 | Returns 401 if not authenticated | Additional | ✅ PASS |
+| AC Ref | Acceptance Criterion | Test Case | Status | Screenshot |
+|--------|---------------------|-----------|--------|-----------|
+| AC-01 | Returns total_income, total_expenses, balance, by_category | TC-US06-01 | ✅ PASS | [24-US06-01](setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png) |
+| AC-02 | Only computes for authenticated user | TC-US06-02 | ✅ PASS | [24-US06-01](setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png) |
+| AC-03 | Accepts optional date range | TC-US06-03 | ✅ PASS | [24-US06-01](setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png) |
+| AC-04 | Returns zeroed values for new user | TC-US06-04 | ✅ PASS | - |
+| AC-05 | Returns 401 if not authenticated | Additional | ✅ PASS | - |
 
 ### Detailed Test Results
 
@@ -106,12 +123,12 @@ PASS tests/summary.test.js
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status |
-|--------|---------------------|-----------|--------|
-| AC-01 | GET `/health` returns 200 when healthy | TC-US07-01 | ✅ PASS |
-| AC-02 | Returns all required fields | TC-US07-01 | ✅ PASS |
-| AC-03 | Verifies database connectivity | TC-US07-02 | ✅ PASS |
-| AC-04 | Does NOT require authentication | TC-US07-03 | ✅ PASS |
+| AC Ref | Acceptance Criterion | Test Case | Status | Screenshot |
+|--------|---------------------|-----------|--------|-----------|
+| AC-01 | GET `/health` returns 200 when healthy | TC-US07-01 | ✅ PASS | [25-US07-01](setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png) |
+| AC-02 | Returns all required fields | TC-US07-01 | ✅ PASS | [25-US07-01](setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png) |
+| AC-03 | Verifies database connectivity | TC-US07-02 | ✅ PASS | [25-US07-01](setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png) |
+| AC-04 | Does NOT require authentication | TC-US07-03 | ✅ PASS | - |
 
 ### Detailed Test Results
 

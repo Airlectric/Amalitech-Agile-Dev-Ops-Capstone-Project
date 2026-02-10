@@ -13,21 +13,43 @@ This document provides comprehensive evidence of test execution for all acceptan
 
 ---
 
+## Screenshot Evidence
+
+| Screenshot # | Image | Description |
+|--------------|-------|-------------|
+| 01 | `setup_test_images/setup/01-postgres-docker-setup.png` | PostgreSQL running in Docker |
+| 02 | `setup_test_images/setup/02-app-logs-docker.png` | Application logs in Docker |
+| 03 | `setup_test_images/setup/03-database-schema.png` | Database schema verification |
+| 04 | `setup_test_images/sprint_1_tests/04-npm-test-running.png` | Sprint 1 tests running |
+| 05 | `setup_test_images/sprint_1_tests/05-test-results-27-passed.png` | 27 tests passed |
+| 06 | `setup_test_images/sprint_1_tests/06-eslint-results.png` | ESLint validation |
+| 07 | `setup_test_images/sprint_1_tests/07-docker-containers.png` | Docker containers running |
+| 11 | `setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png` | Registration success |
+| 12 | `setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png` | Missing email validation |
+| 13 | `setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png` | Invalid email - 401 |
+| 14 | `setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png` | Login success |
+| 15 | `setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png` | Transaction creation |
+| 16 | `setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png` | No token - 401 |
+| 17 | `setup_test_images/api_testing_sprint_1/17-US03-03-invalid-token-401.png` | Invalid token - 401 |
+| 18 | `setup_test_images/api_testing_sprint_1/18-US03-05-negative-amount-validation.png` | Negative amount validation |
+
+---
+
 ## US-01: Register an Account - Test Results
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status | Evidence |
-|--------|---------------------|-----------|--------|----------|
-| AC-01 | POST `/api/auth/register` accepts `{ name, email, password }` | TC-US01-01 | ✅ PASS | `should register user with valid data` |
-| AC-02 | Password is hashed with bcrypt | TC-US01-02 | ✅ PASS | Tested via successful login after registration |
-| AC-03 | Returns 201 with `{ id, name, email, created_at }` | TC-US01-01 | ✅ PASS | Response includes all required fields |
-| AC-04 | Returns 400 if name is missing | TC-US01-03 | ✅ PASS | Validation rejects missing name |
-| AC-05 | Returns 400 if email is missing | TC-US01-04 | ✅ PASS | Validation rejects missing email |
-| AC-06 | Returns 400 if password is missing | TC-US01-05 | ✅ PASS | Validation rejects missing password |
-| AC-07 | Returns 400 if email format is invalid | TC-US01-06 | ✅ PASS | Email validation rejects malformed emails |
-| AC-08 | Returns 409 if email already registered | TC-US01-07 | ✅ PASS | Duplicate email returns 409 Conflict |
-| AC-09 | Password must be at least 6 characters | TC-US01-08 | ✅ PASS | Short passwords rejected with 400 |
+| AC Ref | Acceptance Criterion | Test Case | Status | Evidence | Screenshot |
+|--------|---------------------|-----------|--------|----------|-----------|
+| AC-01 | POST `/api/auth/register` accepts `{ name, email, password }` | TC-US01-01 | ✅ PASS | Response includes all required fields | [11-US01-01](setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png) |
+| AC-02 | Password is hashed with bcrypt | TC-US01-02 | ✅ PASS | Tested via successful login after registration | [14-US02-01](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) |
+| AC-03 | Returns 201 with `{ id, name, email, created_at }` | TC-US01-01 | ✅ PASS | Response includes all required fields | [11-US01-01](setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png) |
+| AC-04 | Returns 400 if name is missing | TC-US01-03 | ✅ PASS | Validation rejects missing name | [12-US01-04](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) |
+| AC-05 | Returns 400 if email is missing | TC-US01-04 | ✅ PASS | Validation rejects missing email | [12-US01-04](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) |
+| AC-06 | Returns 400 if password is missing | TC-US01-05 | ✅ PASS | Validation rejects missing password | [12-US01-04](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) |
+| AC-07 | Returns 400 if email format is invalid | TC-US01-06 | ✅ PASS | Email validation rejects malformed emails | [12-US01-04](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) |
+| AC-08 | Returns 409 if email already registered | TC-US01-07 | ✅ PASS | Duplicate email returns 409 Conflict | [11-US01-01](setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png) |
+| AC-09 | Password must be at least 6 characters | TC-US01-08 | ✅ PASS | Short passwords rejected with 400 | [12-US01-04](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) |
 
 ### Detailed Test Results
 
@@ -49,15 +71,15 @@ PASS tests/auth-register.test.js
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status | Evidence |
-|--------|---------------------|-----------|--------|----------|
-| AC-01 | POST `/api/auth/login` accepts `{ email, password }` | TC-US02-01 | ✅ PASS | Login accepts valid credentials |
-| AC-02 | Compares password against bcrypt hash | TC-US02-02 | ✅ PASS | Verified via bcrypt comparison in controller |
-| AC-03 | Returns 200 OK with `{ token }` | TC-US02-01 | ✅ PASS | Response includes JWT token |
-| AC-04 | JWT valid for 24h | TC-US02-01 | ✅ PASS | Token generation configured for 24h |
-| AC-05 | Returns 401 if email doesn't exist | TC-US02-04 | ✅ PASS | Non-existent email returns 401 |
-| AC-06 | Returns 401 if password is wrong | TC-US02-05 | ✅ PASS | Wrong password returns 401 |
-| AC-07 | JWT payload contains `{ userId, email }` | TC-US02-03 | ✅ PASS | Decoded token includes userId and email |
+| AC Ref | Acceptance Criterion | Test Case | Status | Evidence | Screenshot |
+|--------|---------------------|-----------|--------|----------|-----------|
+| AC-01 | POST `/api/auth/login` accepts `{ email, password }` | TC-US02-01 | ✅ PASS | Login accepts valid credentials | [14-US02-01](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) |
+| AC-02 | Compares password against bcrypt hash | TC-US02-02 | ✅ PASS | Verified via bcrypt comparison in controller | - |
+| AC-03 | Returns 200 OK with `{ token }` | TC-US02-01 | ✅ PASS | Response includes JWT token | [14-US02-01](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) |
+| AC-04 | JWT valid for 24h | TC-US02-01 | ✅ PASS | Token generation configured for 24h | - |
+| AC-05 | Returns 401 if email doesn't exist | TC-US02-04 | ✅ PASS | Non-existent email returns 401 | [13-US02-04](setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png) |
+| AC-06 | Returns 401 if password is wrong | TC-US02-05 | ✅ PASS | Wrong password returns 401 | [13-US02-04](setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png) |
+| AC-07 | JWT payload contains `{ userId, email }` | TC-US02-03 | ✅ PASS | Decoded token includes userId and email | [14-US02-01](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) |
 
 ### Detailed Test Results
 
@@ -78,17 +100,17 @@ PASS tests/auth-login.test.js
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status | Evidence |
-|--------|---------------------|-----------|--------|----------|
-| AC-01 | POST `/api/transactions` accepts `{ type, amount, category, description?, date? }` | TC-US03-01 | ✅ PASS | Valid transaction created |
-| AC-02 | Requires valid JWT in Authorization header | TC-US03-02 | ✅ PASS | Missing token returns 401 |
-| AC-03 | Returns 401 if invalid token | TC-US03-03 | ✅ PASS | Invalid token rejected |
-| AC-04 | Type must be "income" or "expense" | TC-US03-04 | ✅ PASS | Invalid type rejected |
-| AC-05 | Amount must be positive | TC-US03-05 | ✅ PASS | Negative/zero amounts rejected |
-| AC-06 | Category is required | TC-US03-06 | ✅ PASS | Missing category returns 400 |
-| AC-07 | Date defaults to today if not provided | TC-US03-07 | ✅ PASS | Date defaults correctly |
-| AC-08 | Returns 201 with saved transaction | TC-US03-01 | ✅ PASS | Transaction returned with id |
-| AC-09 | Returns 401 if not authenticated | TC-US03-02 | ✅ PASS | Unauthenticated requests rejected |
+| AC Ref | Acceptance Criterion | Test Case | Status | Evidence | Screenshot |
+|--------|---------------------|-----------|--------|----------|-----------|
+| AC-01 | POST `/api/transactions` accepts `{ type, amount, category, description?, date? }` | TC-US03-01 | ✅ PASS | Valid transaction created | [15-US03-01](setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png) |
+| AC-02 | Requires valid JWT in Authorization header | TC-US03-02 | ✅ PASS | Missing token returns 401 | [16-US03-02](setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png) |
+| AC-03 | Returns 401 if invalid token | TC-US03-03 | ✅ PASS | Invalid token rejected | [17-US03-03](setup_test_images/api_testing_sprint_1/17-US03-03-invalid-token-401.png) |
+| AC-04 | Type must be "income" or "expense" | TC-US03-04 | ✅ PASS | Invalid type rejected | - |
+| AC-05 | Amount must be positive | TC-US03-05 | ✅ PASS | Negative/zero amounts rejected | [18-US03-05](setup_test_images/api_testing_sprint_1/18-US03-05-negative-amount-validation.png) |
+| AC-06 | Category is required | TC-US03-06 | ✅ PASS | Missing category returns 400 | - |
+| AC-07 | Date defaults to today if not provided | TC-US03-07 | ✅ PASS | Date defaults correctly | - |
+| AC-08 | Returns 201 with saved transaction | TC-US03-01 | ✅ PASS | Transaction returned with id | [15-US03-01](setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png) |
+| AC-09 | Returns 401 if not authenticated | TC-US03-02 | ✅ PASS | Unauthenticated requests rejected | [16-US03-02](setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png) |
 
 ### Detailed Test Results
 
@@ -112,11 +134,11 @@ PASS tests/transactions.test.js
 
 ### Acceptance Criteria & Test Mapping
 
-| AC Ref | Acceptance Criterion | Test Case | Status | Evidence |
-|--------|---------------------|-----------|--------|----------|
-| AC-01 | GET `/health` returns 200 when healthy | TC-US07-01 | ✅ PASS | Health check returns 200 |
-| AC-02 | Returns required fields (status, uptime, timestamp, database, version) | TC-US07-01 | ✅ PASS | All fields present in response |
-| AC-03 | Does NOT require authentication | TC-US07-03 | ✅ PASS | Public endpoint works without token |
+| AC Ref | Acceptance Criterion | Test Case | Status | Evidence | Screenshot |
+|--------|---------------------|-----------|--------|----------|-----------|
+| AC-01 | GET `/health` returns 200 when healthy | TC-US07-01 | ✅ PASS | Health check returns 200 | [07](setup_test_images/sprint_1_tests/07-docker-containers.png) |
+| AC-02 | Returns required fields (status, uptime, timestamp, database, version) | TC-US07-01 | ✅ PASS | All fields present in response | - |
+| AC-03 | Does NOT require authentication | TC-US07-03 | ✅ PASS | Public endpoint works without token | - |
 
 ### Detailed Test Results
 
