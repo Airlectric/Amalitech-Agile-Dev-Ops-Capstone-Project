@@ -22,8 +22,17 @@
 | Product Backlog | ✅ | `Sprint 0 - Planning/02-product-backlog.md` |
 | Definition of Done | ✅ | `Sprint 0 - Planning/03-definition-of-done.md` |
 | Sprint 1 Plan | ✅ | `Sprint 0 - Planning/04-sprint-1-plan.md` |
-| Sprint 2 Plan | ✅ | `Sprint 0 - Planning/06-sprint-2-plan.md` |
 | Sprint 0 Summary | ✅ | `Sprint 0 - Planning/05-sprint-0-summary.md` |
+| Sprint 2 Plan | ✅ | `Sprint 0 - Planning/06-sprint-2-plan.md` |
+| Sprint 1 Test Report | ✅ | `Sprint 0 - Planning/07-test-execution-report.md` |
+| Sprint 2 Test Report | ✅ | `Sprint 0 - Planning/08-sprint-2-test-report.md` |
+| Final Project Report | ✅ | `Sprint 0 - Planning/09-final-project-report.md` |
+| Sprint 1 Review | ✅ | `Sprint 0 - Planning/10-sprint-1-review.md` |
+| Sprint 1 Retrospective | ✅ | `Sprint 0 - Planning/11-sprint-1-retrospective.md` |
+| Sprint 2 Review | ✅ | `Sprint 0 - Planning/12-sprint-2-review.md` |
+| Final Retrospective | ✅ | `Sprint 0 - Planning/13-final-retrospective.md` |
+| CI/CD Evidence | ✅ | `Sprint 0 - Planning/14-cicd-evidence.md` |
+| Testing Evidence | ✅ | `Sprint 0 - Planning/15-testing-evidence.md` |
 
 ---
 
@@ -91,44 +100,14 @@ spendwise/
 │   ├── 05-sprint-0-summary.md
 │   ├── 06-sprint-2-plan.md
 │   ├── 07-test-execution-report.md
-│   └── 08-sprint-2-test-report.md
-├── src/
-│   ├── config/
-│   │   ├── database.js
-│   │   ├── logger.js
-│   │   └── migrate.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   └── transactionController.js
-│   ├── middleware/
-│   │   ├── auth.js
-│   │   └── validate.js
-│   ├── models/
-│   │   ├── transaction.js
-│   │   └── user.js
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   ├── index.js
-│   │   └── transactionRoutes.js
-│   ├── utils/
-│   │   ├── jwt.js
-│   │   └── password.js
-│   └── server.js
-├── tests/
-│   ├── auth-login.test.js
-│   ├── auth-register.test.js
-│   ├── auth.test.js
-│   ├── health.test.js
-│   ├── summary.test.js
-│   ├── transactions-list.test.js
-│   └── transactions.test.js
-├── .github/workflows/
-│   └── ci.yml
-├── Dockerfile
-├── docker-compose.yml
-├── jest.config.js
-├── package.json
-└── README.md
+│   ├── 08-sprint-2-test-report.md
+│   ├── 09-final-project-report.md
+│   ├── 10-sprint-1-review.md
+│   ├── 11-sprint-1-retrospective.md
+│   ├── 12-sprint-2-review.md
+│   ├── 13-final-retrospective.md
+│   ├── 14-cicd-evidence.md
+│   └── 15-testing-evidence.md
 ```
 
 ---
