@@ -13,30 +13,6 @@ This document provides comprehensive evidence of test execution for all acceptan
 
 ---
 
-## Screenshot Evidence
-
-| Image | Description |
-|-------|-------------|
-| ![PostgreSQL Docker Setup](setup_test_images/setup/01-postgres-docker-setup.png) | PostgreSQL running in Docker |
-| ![App Logs Docker](setup_test_images/setup/02-app-logs-docker.png) | Application logs in Docker |
-| ![Database Schema](setup_test_images/setup/03-database-schema.png) | Database schema verification |
-| ![Tests Running](setup_test_images/sprint_1_tests/04-npm-test-running.png) | Sprint 1 tests running |
-| ![27 Tests Passed](setup_test_images/sprint_1_tests/05-test-results-27-passed.png) | 27 tests passed |
-| ![ESLint Results](setup_test_images/sprint_1_tests/06-eslint-results.png) | ESLint validation passed |
-| ![Docker Containers](setup_test_images/sprint_1_tests/07-docker-containers.png) | Docker containers running |
-
-### API Testing Evidence
-
-| Image | Description |
-|-------|-------------|
-| ![Register Success](setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png) | User registration successful |
-| ![Email Validation](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) | Email validation working |
-| ![Invalid Login](setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png) | Invalid login returns 401 |
-| ![Login Success](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) | Login successful |
-| ![Create Transaction](setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png) | Transaction created |
-| ![No Token](setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png) | No token returns 401 |
-| ![Invalid Token](setup_test_images/api_testing_sprint_1/17-US03-03-invalid-token-401.png) | Invalid token returns 401 |
-| ![Amount Validation](setup_test_images/api_testing_sprint_1/18-US03-05-negative-amount-validation.png) | Amount validation working |
 
 ---
 

@@ -146,17 +146,17 @@ spendwise/
 ### Sprint 1 Testing
 | Screenshot | Description |
 |------------|-------------|
-| ![Tests Running](setup_test_images/sprint_1_tests/04-npm-test-running.png) | Sprint 1 tests running |
-| ![Test Results](setup_test_images/sprint_1_tests/05-test-results-27-passed.png) | 27 tests passed (auth & transactions) |
-| ![ESLint](setup_test_images/sprint_1_tests/06-eslint-results.png) | ESLint passed |
-| ![Docker Containers](setup_test_images/sprint_1_tests/07-docker-containers.png) | Docker containers running |
+| ![Tests Running](setup_test_images/sprint_1_tests/authentication-tests-passed.png) | authentication tests passed |
+| ![Test Results](setup_test_images/sprint_1_tests/registration-tests-passed.png) | registration tests passed |
+| ![ESLint](setup_test_images/sprint_1_tests/login-tests-passed.png) | login tests passed |
+| ![Docker Containers](setup_test_images/sprint_1_tests/transaction-tests-passed.png) | transaction tests passed |
 
 ### Sprint 2 Testing
 | Screenshot | Description |
 |------------|-------------|
-| ![Sprint 2 Tests](setup_test_images/sprint_2_tests/08-sprint2-tests-running.png) | Sprint 2 tests running |
-| ![45 Tests Passed](setup_test_images/sprint_2_tests/09-test-results-45-passed.png) | All 45 tests passed |
-| ![90% Coverage](setup_test_images/sprint_2_tests/10-coverage-report-90percent.png) | 90.63% code coverage |
+| ![Sprint 2 Tests](setup_test_images/sprint_2_tests/health-tests-passed.png) | health tests passed |
+| ![45 Tests Passed](setup_test_images/sprint_2_tests/transaction-lists-tests-passed.png) | transaction lists tests passed |
+| ![90% Coverage](setup_test_images/sprint_2_tests/summary-test-passed.png) | summary test passed |
 
 ### API Testing Sprint 1
 | Screenshot | Description |

@@ -30,14 +30,11 @@ This document provides comprehensive evidence of test execution for all acceptan
 
 | Screenshot # | Image | Description |
 |--------------|-------|-------------|
-| 08 | `setup_test_images/sprint_2_tests/08-sprint2-tests-running.png` | Sprint 2 tests running |
-| 09 | `setup_test_images/sprint_2_tests/09-test-results-45-passed.png` | 45 tests passed |
-| 10 | `setup_test_images/sprint_2_tests/10-coverage-report-90percent.png` | Coverage report 90% |
+| 08 | `setup_test_images/sprint_2_tests/health-tests-passed.png` | Sprint 2 tests running |
+| 09 | `setup_test_images/sprint_2_tests/transaction-lists-tests-passed.png` | 45 tests passed |
+| 10 | `setup_test_images/sprint_2_tests/summary-test-passed.png` | Coverage report 90% |
 | 19 | `setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png` | List transactions endpoint |
 | 20 | `setup_test_images/api_testing_sprint_2/20-US05-01-filter-by-type.png` | Filter by type |
-| 21 | `setup_test_images/api_testing_sprint_2/21-US05-02-filter-by-category.png` | Filter by category |
-| 22 | `setup_test_images/api_testing_sprint_2/22-US05-03-filter-by-date-range.png` | Filter by date range |
-| 23 | `setup_test_images/api_testing_sprint_2/23-US05-04-combined-filters.png` | Combined filters |
 | 24 | `setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png` | Summary endpoint |
 | 25 | `setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png` | Health endpoint |
 
