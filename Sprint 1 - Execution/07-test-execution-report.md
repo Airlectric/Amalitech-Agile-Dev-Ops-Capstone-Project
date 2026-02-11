@@ -136,7 +136,7 @@ PASS tests/transactions.test.js
 
 | AC Ref | Acceptance Criterion | Test Case | Status | Evidence | Screenshot |
 |--------|---------------------|-----------|--------|----------|-----------|
-| AC-01 | GET `/health` returns 200 when healthy | TC-US07-01 | ✅ PASS | Health check returns 200 | [07](setup_test_images/sprint_1_tests/07-docker-containers.png) |
+| AC-01 | GET `/health` returns 200 when healthy | TC-US07-01 | ✅ PASS | Health check returns 200 | [Sprint 2 Test Evidence](Sprint%202%20-%20Execution/10-sprint-2-test-report.md) |
 | AC-02 | Returns required fields (status, uptime, timestamp, database, version) | TC-US07-01 | ✅ PASS | All fields present in response | - |
 | AC-03 | Does NOT require authentication | TC-US07-03 | ✅ PASS | Public endpoint works without token | - |
 

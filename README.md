@@ -147,7 +147,7 @@ spendwise/
 | Screenshot | Description |
 |------------|-------------|
 | ![Tests Running](setup_test_images/sprint_1_tests/04-npm-test-running.png) | Sprint 1 tests running |
-| ![Test Results](setup_test_images/sprint_1_tests/05-test-results-27-passed.png) | 27 tests passed |
+| ![Test Results](setup_test_images/sprint_1_tests/05-test-results-27-passed.png) | 27 tests passed (auth & transactions) |
 | ![ESLint](setup_test_images/sprint_1_tests/06-eslint-results.png) | ESLint passed |
 | ![Docker Containers](setup_test_images/sprint_1_tests/07-docker-containers.png) | Docker containers running |
 
@@ -155,31 +155,31 @@ spendwise/
 | Screenshot | Description |
 |------------|-------------|
 | ![Sprint 2 Tests](setup_test_images/sprint_2_tests/08-sprint2-tests-running.png) | Sprint 2 tests running |
-| ![45 Tests Passed](setup_test_images/sprint_2_tests/09-test-results-45-passed.png) | 45 tests passed |
+| ![45 Tests Passed](setup_test_images/sprint_2_tests/09-test-results-45-passed.png) | All 45 tests passed |
 | ![90% Coverage](setup_test_images/sprint_2_tests/10-coverage-report-90percent.png) | 90.63% code coverage |
 
 ### API Testing Sprint 1
 | Screenshot | Description |
 |------------|-------------|
-| ![Register Success](setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png) | User registration successful |
-| ![Missing Email Validation](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) | Email validation working |
-| ![Invalid Login](setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png) | Invalid login returns 401 |
-| ![Login Success](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) | Login successful |
-| ![Create Transaction](setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png) | Transaction created |
-| ![No Token](setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png) | No token returns 401 |
-| ![Invalid Token](setup_test_images/api_testing_sprint_1/17-US03-03-invalid-token-401.png) | Invalid token returns 401 |
-| ![Negative Amount](setup_test_images/api_testing_sprint_1/18-US03-05-negative-amount-validation.png) | Validation working |
+| ![US01 Register](setup_test_images/api_testing_sprint_1/11-US01-01-register-success.png) | US01: User registration successful |
+| ![US01 Validation](setup_test_images/api_testing_sprint_1/12-US01-04-missing-email-validation.png) | US01: Missing email validation |
+| ![US02 Invalid Login](setup_test_images/api_testing_sprint_1/13-US02-04-invalid-email-401.png) | US02: Invalid login returns 401 |
+| ![US02 Login Success](setup_test_images/api_testing_sprint_1/14-US02-01-login-success.png) | US02: Login successful |
+| ![US03 Create Transaction](setup_test_images/api_testing_sprint_1/15-US03-01-create-transaction-success.png) | US03: Transaction created |
+| ![US03 No Token](setup_test_images/api_testing_sprint_1/16-US03-02-no-token-401.png) | US03: No token returns 401 |
+| ![US03 Invalid Token](setup_test_images/api_testing_sprint_1/17-US03-03-invalid-token-401.png) | US03: Invalid token returns 401 |
+| ![US03 Validation](setup_test_images/api_testing_sprint_1/18-US03-05-negative-amount-validation.png) | US03: Amount validation working |
 
 ### API Testing Sprint 2
 | Screenshot | Description |
 |------------|-------------|
-| ![List Transactions](setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png) | List transactions endpoint |
-| ![Filter by Type](setup_test_images/api_testing_sprint_2/20-US05-01-filter-by-type.png) | Filter by type |
-| ![Filter by Category](setup_test_images/api_testing_sprint_2/21-US05-02-filter-by-category.png) | Filter by category |
-| ![Filter by Date](setup_test_images/api_testing_sprint_2/22-US05-03-filter-by-date-range.png) | Filter by date range |
-| ![Combined Filters](setup_test_images/api_testing_sprint_2/23-US05-04-combined-filters.png) | Combined filters |
-| ![Summary Endpoint](setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png) | Summary endpoint |
-| ![Health Endpoint](setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png) | Health check endpoint |
+| ![US04 List](setup_test_images/api_testing_sprint_2/19-US04-01-list-transactions.png) | US04: List transactions |
+| ![US05 Filter Type](setup_test_images/api_testing_sprint_2/20-US05-01-filter-by-type.png) | US05: Filter by type |
+| ![US05 Filter Category](setup_test_images/api_testing_sprint_2/21-US05-02-filter-by-category.png) | US05: Filter by category |
+| ![US05 Filter Date](setup_test_images/api_testing_sprint_2/22-US05-03-filter-by-date-range.png) | US05: Filter by date range |
+| ![US05 Combined Filters](setup_test_images/api_testing_sprint_2/23-US05-04-combined-filters.png) | US05: Combined filters |
+| ![US06 Summary](setup_test_images/api_testing_sprint_2/24-US06-01-summary-endpoint.png) | US06: Summary endpoint |
+| ![US07 Health](setup_test_images/api_testing_sprint_2/25-US07-01-health-endpoint.png) | US07: Health check endpoint |
 
 ### CI/CD Deployment
 | Screenshot | Description |
