@@ -70,10 +70,10 @@ Comprehensive documentation maintained throughout:
 
 | Challenge | Impact | Solution |
 |-----------|--------|----------|
-| PostgreSQL connection pooling | Medium | Used `--runInBand` flag for Jest |
-| Environment variable loading | Low | Created .env file explicitly |
-| Date format inconsistencies | Low | Used `.toContain()` in assertions |
-| Test database isolation | Medium | Sequential test execution |
+| PostgreSQL connection pooling | P2 (Medium) | Used `--runInBand` flag for Jest |
+| Environment variable loading | P3 (Low) | Created .env file explicitly |
+| Date format inconsistencies | P3 (Low) | Used `.toContain()` in assertions |
+| Test database isolation | P2 (Medium) | Sequential test execution |
 
 ---
 

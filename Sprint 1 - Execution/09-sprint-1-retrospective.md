@@ -86,11 +86,11 @@ bb3c257 fix: resolve test and lint issues
 
 | Priority | Action | Owner | Status |
 |----------|--------|-------|--------|
-| High | Use `--runInBand` flag for test execution | Self | ✅ Done |
-| High | Create .env file with DATABASE_URL | Self | ✅ Done |
-| Medium | Standardize date format in responses | Self | ✅ Done |
-| Medium | Add more comprehensive test coverage | Self | Planned |
-| Low | Consider using test containers | Self | Backlog |
+| P1 (High) | Use `--runInBand` flag for test execution | Self | ✅ Done |
+| P1 (High) | Create .env file with DATABASE_URL | Self | ✅ Done |
+| P2 (Medium) | Standardize date format in responses | Self | ✅ Done |
+| P2 (Medium) | Add more comprehensive test coverage | Self | Planned |
+| P3 (Low) | Consider using test containers | Self | Backlog |
 
 ---
 
@@ -113,9 +113,9 @@ bb3c257 fix: resolve test and lint issues
 
 | Item | Description | Priority |
 |------|-------------|----------|
-| Coverage Gap | 64% overall coverage (models need more tests) | Medium |
-| Date Handling | Inconsistent date formats in responses | Low |
-| Error Handling | Could add more specific error messages | Low |
+| Coverage Gap | 64% overall coverage (models need more tests) | P2 (Medium) |
+| Date Handling | Inconsistent date formats in responses | P3 (Low) |
+| Error Handling | Could add more specific error messages | P3 (Low) |
 
 ---
 

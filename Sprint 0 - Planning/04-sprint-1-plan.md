@@ -125,10 +125,10 @@ Additionally for Sprint 1:
 
 | Risk | Impact | Mitigation |
 |------|--------|------------|
-| Database connectivity issues | High | Use docker-compose for local DB; test CI with PostgreSQL service container |
-| JWT token expiration issues | Medium | Set 24h expiry; implement token refresh if needed |
-| Integration test complexity | Medium | Use Supertest for HTTP-level testing; mock database where appropriate |
-| Time constraints | High | Focus on core functionality first; defer enhancements to Sprint 2 |
+| Database connectivity issues | P1 (High) | Use docker-compose for local DB; test CI with PostgreSQL service container |
+| JWT token expiration issues | P2 (Medium) | Set 24h expiry; implement token refresh if needed |
+| Integration test complexity | P2 (Medium) | Use Supertest for HTTP-level testing; mock database where appropriate |
+| Time constraints | P1 (High) | Focus on core functionality first; defer enhancements to Sprint 2 |
 
 ---
 

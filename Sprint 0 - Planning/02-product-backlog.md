@@ -22,7 +22,7 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - Password must be at least 6 characters
 
 **Story Points:** 3  
-**Priority:** P0 (Sprint 1)
+**Priority:** P0 (Critical)
 
 ---
 
@@ -38,7 +38,7 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - The JWT payload contains `{ userId, email }`
 
 **Story Points:** 3  
-**Priority:** P0 (Sprint 1)
+**Priority:** P0 (Critical)
 
 ---
 
@@ -58,7 +58,7 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - Returns `400` if required fields are missing or invalid
 
 **Story Points:** 3  
-**Priority:** P0 (Sprint 1)
+**Priority:** P0 (Critical)
 
 ---
 
@@ -74,7 +74,7 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - Returns `401` if not authenticated
 
 **Story Points:** 2  
-**Priority:** P1 (Sprint 2)
+**Priority:** P1 (High)
 
 ---
 
@@ -91,7 +91,7 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - Returns `401` if not authenticated
 
 **Story Points:** 3  
-**Priority:** P1 (Sprint 2)
+**Priority:** P1 (High)
 
 ---
 
@@ -120,7 +120,7 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - Returns `401` if not authenticated
 
 **Story Points:** 3  
-**Priority:** P2 (Sprint 2)
+**Priority:** P2 (Medium)
 
 ---
 
@@ -144,34 +144,44 @@ The Product Backlog contains all user stories for the SpendWise Personal Expense
 - Does NOT require authentication
 
 **Story Points:** 2  
-**Priority:** P1 (Sprint 2)
+**Priority:** P1 (High)
 
 ---
 
 ## Backlog Summary
 
-| ID | Story | Points | Priority | Sprint |
-|----|-------|--------|----------|--------|
-| US-01 | Register an Account | 3 | P0 | Sprint 1 |
-| US-02 | Log In | 3 | P0 | Sprint 1 |
-| US-03 | Add a Transaction | 3 | P0 | Sprint 1 |
-| US-04 | List My Transactions | 2 | P1 | Sprint 2 |
-| US-05 | Filter Transactions | 3 | P1 | Sprint 2 |
-| US-06 | Spending Summary | 3 | P2 | Sprint 2 |
-| US-07 | Health Endpoint | 2 | P1 | Sprint 2 |
+| ID | Story | Points | Priority |
+|----|-------|--------|----------|
+| US-01 | Register an Account | 3 | P0 (Critical) |
+| US-02 | Log In | 3 | P0 (Critical) |
+| US-03 | Add a Transaction | 3 | P0 (Critical) |
+| US-04 | List My Transactions | 2 | P1 (High) |
+| US-05 | Filter Transactions | 3 | P1 (High) |
+| US-06 | Spending Summary | 3 | P2 (Medium) |
+| US-07 | Health Endpoint | 2 | P1 (High) |
 
 **Total Story Points:** 19
 
-**Sprint 1:** 9 points (US-01 + US-02 + US-03)  
-**Sprint 2:** 10 points (US-04 + US-05 + US-06 + US-07)
+---
+
+## Priority Naming Convention
+
+This project uses the industry-standard **P0–P3** priority classification:
+
+| Priority Level | Standard Naming | Relationship to Story Points |
+|----------------|-----------------|------------------------------|
+| Critical | P0 / Blockers | Must be done regardless of Story Point size. |
+| High | P1 / Must-Have | High priority; if Points are too high, it must be decomposed. |
+| Medium | P2 / Should-Have | Average priority; usually prioritized if Points are low. |
+| Low | P3 / Could-Have | Lowest priority; often "parked" if Points exceed 5–8. |
 
 ---
 
 ## Prioritization Rationale
 
-- **P0 (Must Have):** US-01, US-02, US-03 form the core authentication and basic transaction functionality. Without these, users cannot use the system.
-- **P1 (Should Have):** US-04, US-05, US-07 enhance usability and observability. These are important but not blocking.
-- **P2 (Nice to Have):** US-06 provides valuable insights but is not essential for the MVP.
+- **P0 (Critical / Blockers):** US-01, US-02, US-03 form the core authentication and basic transaction functionality. Without these, users cannot use the system.
+- **P1 (High / Must-Have):** US-04, US-05, US-07 enhance usability and observability. These are important but not blocking.
+- **P2 (Medium / Should-Have):** US-06 provides valuable insights but is not essential for the MVP.
 
 ---
 
