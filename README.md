@@ -53,6 +53,7 @@
 | API Documentation | See [README.md](README.md) |
 | Deployment Guide | See [Deployment - CI_CD/14-cicd-evidence.md](Deployment%20-%20CI_CD/14-cicd-evidence.md) |
 | Test Results | See [Deployment - CI_CD/15-testing-evidence.md](Deployment%20-%20CI_CD/15-testing-evidence.md) |
+| Full System Testing Recording | [Watch on ScreenPal](https://go.screenpal.com/watch/cOnojMn0qo3) |
 
 ---
 
