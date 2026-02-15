@@ -202,7 +202,7 @@ spendwise/
 - **Spending summary with category breakdown**
 - **Health monitoring endpoint**
 - **Docker containerization**
-- **CI/CD pipeline with GitHub Actions**
+- **CI/CD pipeline with GitHub Actions connecting to Render**
 
 ---
 
